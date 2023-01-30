@@ -19,4 +19,13 @@
 - done
 
 # 4. <a href="https://school.programmers.co.kr/learn/courses/30/lessons/42842">카펫</a>
-- 
+
+# 6. <a href="https://school.programmers.co.kr/learn/courses/30/lessons/86971">전력망을 둘로 나누기</a>
+- 순서대로 간선을 자른 후
+- 그래프를 만들어
+- 각 노드를 시작 노드로 반복문 수행 뒤
+- `max - min`으로 구하려 했으나
+- DFS에서 제대로 값이 나오지 않음.
+
+👉 DFS에서 `visited`인자에 함수 선언시 빈 리스트 선언말고, 호출시 빈 리스트 넣어주니 제대로 결과가 나옴...
+- done.
