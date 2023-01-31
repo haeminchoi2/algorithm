@@ -12,14 +12,24 @@ graph['H'] = ['C']
 graph['I'] = ['C', 'J']
 graph['J'] = ['I']
 
-####################
-def dfs(node, visited = []):
-    visited.append(node)
-    for near in graph[node]:
-        if not near in visited:
-            visited = dfs(near, visited)
+# 재귀를 이용한 DFS
+# def dfs(node, visited = []):
+#     visited.append(node)
+#     for near in graph[node]:
+#         if not near in visited:
+#             visited = dfs(near, visited)
+#     return visited
+
+# 스택을 이용한 DFS
+def my_dfs(graph, node):
+    visited = []
+    stack = [node]
+    
+    while stack:
+        visit = stack.pop()
+        if visit not in visited:
+            visited.append(visit)
+            stack.extend(graph[visit])
     return visited
 
-#####################
-# def my_dfs()
-print(dfs('A'))
+print(my_dfs(graph, 'A'))
