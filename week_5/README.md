@@ -32,3 +32,10 @@
   - `n명`과 비교하여 다시 이분탐색,
   - 심사 받을 수 있는 `people`과 `n`이 같다면 정답이다.
   - done.
+
+# 4. <a href="https://www.acmicpc.net/problem/2110">공유기 설치</a>
+
+# 5. <a href="https://www.acmicpc.net/problem/2156">포도주시식</a>
+- 경우의 수를 구해보고, 점화식을 세워야함.
+- 현재 잔을 못먹는 경우, 이전 잔을 못먹은 경우, 이전이전의 잔을 못먹은 경우 세가지로 구함.
+- done.
