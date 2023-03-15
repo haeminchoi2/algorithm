@@ -20,8 +20,8 @@ def solution(orders, course):
             if set(key) & set(order) == set(key):
                 array[key] += 1
     
-    maximum = list(map(lambda x: [x, y] for y in array, course))
-    print(maximum)
+    # maximum = list(map(lambda x: [x, y] for y in array, course))
+    print(array)
     return array
 
 solution(["ABCDE", "AB", "CD", "ADE", "XYZ", "XYZ", "ACD"], [2,3,4])
