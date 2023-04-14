@@ -47,4 +47,9 @@
 - 소요시간 : 10분
 
 # 5. <a href="https://leetcode.com/problems/longest-palindromic-substring/">Longest Palindromic Substring</a>
-- 
+
+# 4. <a href="https://leetcode.com/problems/zigzag-conversion/">Zigzig Conversion</a>
+- numRows에 닿을때마다
+- flag를 바꿔서 인덱스를 뜻하는 cnt를 내림차순으로 넣는지 오름차순으로 넣는지 확인해준다
+- done.
+- 소요시간 30분
