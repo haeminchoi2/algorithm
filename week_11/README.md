@@ -48,8 +48,19 @@
 
 # 5. <a href="https://leetcode.com/problems/longest-palindromic-substring/">Longest Palindromic Substring</a>
 
-# 4. <a href="https://leetcode.com/problems/zigzag-conversion/">Zigzig Conversion</a>
+# 6. <a href="https://leetcode.com/problems/zigzag-conversion/">Zigzig Conversion</a>
 - numRows에 닿을때마다
 - flag를 바꿔서 인덱스를 뜻하는 cnt를 내림차순으로 넣는지 오름차순으로 넣는지 확인해준다
 - done.
+- 소요시간 30분
+
+# 11. <a href="https://leetcode.com/problems/container-with-most-water/">Container With Most Water</a>
+- 보자마자 두개의 포인터를 써야겠다고 생각했다.
+- `left`는 0부터, `right`는 `len - 1`부터
+- `while`문을 통해 `right`가 `left`와 만날때까지
+- 둘 중 작은 높이를 골라 넓이를 구하므로 `min`함수 이용
+- `left`인덱스에 있는 원소가 `rigth`인덱스의 원소보다 작으면 `left`를 한칸 이동한다
+- 반대의 경우 `right`를 한칸 이동한다.
+- `water`넓이를 반환하면 끝
+- done
 - 소요시간 30분
