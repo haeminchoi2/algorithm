@@ -47,6 +47,24 @@
 - 소요시간 : 10분
 
 # 5. <a href="https://leetcode.com/problems/longest-palindromic-substring/">Longest Palindromic Substring</a>
+- 팔린드롬인지 확인해주는 함수를 만들고
+- `l`, `r` 포인터를 이용해 문자열을 점차 중앙에 가까워지게 만들었다.
+- 실패
+
+- 시간이 오래걸리고 문제풀이가 되지 않아 참고하였음.
+- 1. 이해하기 쉬운 코드
+  - 문자열 길이만큼 역순으로 `for`문을 돌려 오른쪽에서부터 잘라들어온다
+  - 이중 `for`문으로 내부 `for`문엔 제일 왼쪽에서부터 잘린 오른쪽까지 다 돌아본다.
+  - 임의의 문자열 substring을 저장하고
+  - 임의의 문자열이 뒤집어도 같다면 바로 `return`하여 가장 긴 문자열이 되고
+  - 없다면 빈 문자열을 `return`
+
+- 2. `two pointer`
+  - `expand`함수에서 `two pointer`를 확장시켜준다. `while`문의 조건에 맞으면 포인터가 확장된다.
+  - 이미 팰린드롬이라면 바로 `return`
+  - 가장 긴 부분문자열을 찾는 것이므로 `max()`함수를 이용하고, `expand()`에서 `i+1`, `i+2`는 각각 짝수일때, 홀수일때를 의미한다.
+
+- 소요시간 : 1시간 30분 이상
 
 # 6. <a href="https://leetcode.com/problems/zigzag-conversion/">Zigzig Conversion</a>
 - numRows에 닿을때마다
